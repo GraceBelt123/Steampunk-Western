@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: gearshop.ma
-//Last modified: Sat, Apr 21, 2018 02:10:36 AM
+//Last modified: Sat, Apr 21, 2018 02:11:52 AM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D749CEC8-43C3-AD29-D3B3-B2822832F684";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -69.573774041220005 22.888939965743475 15.43586175104814 ;
-	setAttr ".r" -type "double3" 707.66164731033791 -1509.3999999998734 0 ;
+	setAttr ".t" -type "double3" -30.717254116225835 26.981615320167958 57.18759992318212 ;
+	setAttr ".r" -type "double3" 704.66164731025594 -1466.5999999999713 -4.4463171878283177e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2759083E-4B4C-4F3B-5C9F-24AD777BC1D6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 80.510126436680466;
+	setAttr ".coi" 80.510126436680892;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
