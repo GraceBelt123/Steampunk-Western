@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: gearshop.ma
-//Last modified: Tue, Apr 24, 2018 03:50:56 PM
+//Last modified: Tue, Apr 24, 2018 03:59:53 PM
 //Codeset: 1252
 requires maya "2017ff05";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D749CEC8-43C3-AD29-D3B3-B2822832F684";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -149.54806594650756 100.36907072076882 -5.2095204895493907 ;
-	setAttr ".r" -type "double3" 689.66164731119602 -2222.5999999991514 3.4556238252767597e-015 ;
+	setAttr ".t" -type "double3" -151.74700429559974 166.97615588454602 8.6493687974111708 ;
+	setAttr ".r" -type "double3" 677.06164730733042 -2233.7999999997601 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2759083E-4B4C-4F3B-5C9F-24AD777BC1D6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 187.46127022943523;
+	setAttr ".coi" 226.12145474553111;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -63643,7 +63643,7 @@ createNode mesh -n "pCubeShape18" -p "pCube18";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube19";
 	rename -uid "FC1DFF00-475E-54C8-A753-6592744119FB";
-	setAttr ".t" -type "double3" -5.8651924195565375 9.0826780186663072 -35.775095768698968 ;
+	setAttr ".t" -type "double3" -5.8651924195565375 7.8605563073857656 -35.775095768698968 ;
 	setAttr ".s" -type "double3" 3 3 3 ;
 createNode mesh -n "pCubeShape19" -p "pCube19";
 	rename -uid "90199A74-446F-2B41-7A5C-08AF8F17C406";
@@ -63713,7 +63713,7 @@ createNode mesh -n "pCubeShape20" -p "pCube20";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube21";
 	rename -uid "DFE2D4DA-439A-1C8D-7ECF-FBA349C8BA10";
-	setAttr ".t" -type "double3" -5.8651924195565375 13.110425084181651 -35.775095768698968 ;
+	setAttr ".t" -type "double3" -5.8651924195565375 10.690826119186637 -35.775095768698968 ;
 	setAttr ".s" -type "double3" 3 3 3 ;
 createNode mesh -n "pCubeShape21" -p "pCube21";
 	rename -uid "C17B3FDD-4C00-0EF0-49A7-B585C20A1882";
@@ -65871,7 +65871,7 @@ createNode mesh -n "pCube40Shape" -p "pCube40";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube41";
 	rename -uid "80415653-4F30-EE41-AD60-5E9ACD0A627D";
-	setAttr ".t" -type "double3" -5.8651924195565375 17.114850206685624 -35.775095768698968 ;
+	setAttr ".t" -type "double3" -5.8651924195565375 13.705277300999647 -35.775095768698968 ;
 	setAttr ".s" -type "double3" 3 3 3 ;
 createNode mesh -n "pCubeShape41" -p "pCube41";
 	rename -uid "43CB1EB2-472C-8005-AB76-2CB87D273BCE";
@@ -67719,6 +67719,53 @@ createNode mesh -n "pCubeShape52" -p "pCube52";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 4 ".pt[12:15]" -type "float3"  -1.5215869 0 0 -1.5215869 
 		0 0 -1.5215869 0 0 -1.5215869 0 0;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "pCube53";
+	rename -uid "68FDE9C9-4534-2F23-DDB1-19A3C1999C79";
+	setAttr ".t" -type "double3" -5.8651924195565375 16.923161842266857 -35.775095768698968 ;
+	setAttr ".s" -type "double3" 3 3 3 ;
+createNode mesh -n "pCubeShape53" -p "pCube53";
+	rename -uid "6DFF0FC6-44AB-CB40-5325-FDBF0B973E32";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.75 0.125 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
+		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
+		 0.875 0.25 0.125 0 0.125 0.25;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 6 ".pt";
+	setAttr ".pt[1]" -type "float3" 9.9117689 5.5511151e-017 0 ;
+	setAttr ".pt[2]" -type "float3" 0 -0.86589634 0 ;
+	setAttr ".pt[3]" -type "float3" 9.9117689 -0.86589634 0 ;
+	setAttr ".pt[4]" -type "float3" 0 -0.86589634 0 ;
+	setAttr ".pt[5]" -type "float3" 9.9117689 -0.86589634 0 ;
+	setAttr ".pt[7]" -type "float3" 9.9117689 5.5511151e-017 0 ;
+	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
+		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
+	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
+		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
+	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 1 3 2
+		f 4 1 7 -3 -7
+		mu 0 4 2 3 5 4
+		f 4 2 9 -4 -9
+		mu 0 4 4 5 7 6
+		f 4 3 11 -1 -11
+		mu 0 4 6 7 9 8
+		f 4 -12 -10 -8 -6
+		mu 0 4 1 10 11 3
+		f 4 10 4 6 8
+		mu 0 4 12 0 2 13;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "B6D4E963-4899-CF8B-5D44-52B8A401EDA6";
@@ -72113,7 +72160,7 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
-	setAttr -s 401 ".dsm";
+	setAttr -s 402 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 356 ".gn";
 select -ne :initialParticleSE;
@@ -74110,6 +74157,7 @@ connectAttr "pCubeShape49.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape50.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape51.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape52.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape53.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
